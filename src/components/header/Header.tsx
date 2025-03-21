@@ -22,7 +22,7 @@ export default function Header() {
   }, []);
 
   const anchorClass =
-    "text-white text-xs sm:text-sm font-semibold sm:font-bold hover:scale-105 transition-all duration-200 cursor-pointer";
+    "text-[#212121] text-xs sm:text-sm font-semibold sm:font-bold hover:scale-105 transition-all duration-200 cursor-pointer";
 
   const contactClass =
     "bg-[#ff5e0081] backdrop-blur flex items-center justify-center w-8 h-8 max-lg:w-9 max-lg:h-9 text-white text-lg font-bold p-2 rounded-full border border-orange-500 hover:cursor-pointer hover:scale-[1.03] transition-transform duration-300";
@@ -40,7 +40,7 @@ export default function Header() {
         <ul
           className={`flex items-center gap-12 transition-all duration-6 ${
             isScrolled
-              ? "bg-black/30 backdrop-blur border border-[#36363650] px-4 py-3 rounded-full opacity-100 translate-y-0"
+              ? "bg-white/30 backdrop-blur border border-[#bababa50] px-4 py-3 rounded-full opacity-100 translate-y-0"
               : "translate-y-[-5px]"
           }`}
         >
