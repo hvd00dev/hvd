@@ -5,24 +5,4 @@
     width: 100%;
     color: white;
   
-    h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-  
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-  
-      li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-      }
-  
-      li a:hover {
-        text-decoration: underline;
-      }
-    }
   }  
