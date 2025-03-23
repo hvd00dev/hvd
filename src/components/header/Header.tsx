@@ -29,70 +29,73 @@ export default function Header() {
     "bg-[#ff5e0081] backdrop-blur flex items-center justify-center w-8 h-8 max-lg:w-9 max-lg:h-9 text-white text-lg font-bold p-2 rounded-full border border-orange-500 hover:cursor-pointer hover:scale-[1.03] transition-transform duration-300";
 
   return (
-
-      <header
-      className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1320px] flex items-center justify-between px-6 transition-all duration-500 z-[5] ${
+    <header
+      className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1320px] flex items-center justify-between px-6 z-[5] ${
         isScrolled
-          ? "py-3 opacity-100 translate-y-0"
-          : "bg-transparent py-6 opacity-90 translate-y-[-6px]"
+          ? "py-3 opacity-100 translate-y-0 transition-all duration-600"
+          : "bg-transparent py-6"
       }`}
-      
-      >
-        <Image className="cursor-pointer hover:scale-102" src="/logo.png" alt="HVD logo" width={60} height={20} />
-        <nav>
-          <ul
-            className={`flex items-center gap-12 transition-all duration-1 ${
-              isScrolled
-                ? "bg-black/30 backdrop-blur border-2 border-[#1c1c1c50] px-4 py-3 rounded-full opacity-100 translate-y-0"
-                : "translate-y-[-5px]"
-            }`}
-          >
-            <li>
-              <a className={anchorClass} href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className={anchorClass} href="#">
-                About
-              </a>
-            </li>
-            <li>
-              <a className={anchorClass} href="#">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a className={anchorClass} href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="flex items-center gap-2">
-          <a
-            className={contactClass}
-            href="https://github.com/hvd00dev"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            className={contactClass}
-            href="https://www.linkedin.com/in/hudson-ferreira-483936186/"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a
-            className={contactClass}
-            href="https://www.instagram.com/hudfrr/"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </div>
-      </header>
-    
+    >
+      <Image
+        className="cursor-pointer hover:scale-102"
+        src="/logo.png"
+        alt="HVD logo"
+        width={60}
+        height={20}
+      />
+      <nav>
+        <ul
+          className={`flex items-center gap-12 transition-all duration-1 ${
+            isScrolled
+              ? "bg-black/30 backdrop-blur border-2 border-[#1c1c1c20] px-4 py-3 rounded-full opacity-100 translate-y-0"
+              : "translate-y-[-5px]"
+          }`}
+        >
+          <li>
+            <a className={anchorClass} href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a className={anchorClass} href="#">
+              About
+            </a>
+          </li>
+          <li>
+            <a className={anchorClass} href="#">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a className={anchorClass} href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div className="flex items-center gap-2">
+        <a
+          className={contactClass}
+          href="https://github.com/hvd00dev"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a
+          className={contactClass}
+          href="https://www.linkedin.com/in/hudson-ferreira-483936186/"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a
+          className={contactClass}
+          href="https://www.instagram.com/hudfrr/"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+      </div>
+    </header>
   );
 }
