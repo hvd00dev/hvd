@@ -1,0 +1,39 @@
+@keyframes neonBlink {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.neonblink {
+  animation: neonBlink 3s infinite;
+}
