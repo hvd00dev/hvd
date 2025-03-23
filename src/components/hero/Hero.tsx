@@ -33,7 +33,7 @@ export default function Hero() {
               href="mailto:hvd00dev@gmail.com"
             />
             <Button
-              fontsize="22px"
+              fontSize="20px"
               color="#31fe75"
               background="#1f64365f"
               border="#31fe75"

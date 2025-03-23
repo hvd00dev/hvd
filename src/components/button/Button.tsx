@@ -5,7 +5,7 @@ import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 type ButtonProps = {
   text?: string;
-  fontsize?: string;
+  fontSize?: string;
   icon?: IconDefinition;
   onClick?: () => void;
   border?: string;
@@ -15,7 +15,7 @@ type ButtonProps = {
   target?: string;
 };
 
-const Button: React.FC<ButtonProps> = ({ text, icon, onClick, border, background, color, href, target, fontsize }) => {
+const Button: React.FC<ButtonProps> = ({ text, icon, onClick, border, background, color, href, target, fontSize }) => {
   const baseStyles = "cursor-pointer flex text-[14px] min-h-[42px] max-h-[42px] min-w-[42px] items-center justify-center rounded-lg gap-2 p-2 hover:scale-[1.02] hover:transition-all hover:duration-200 border hover:border-2";
   
   const content = (
@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({ text, icon, onClick, border, background
         background: background || "#ff5e0060",
         borderColor: border || "#ff6900",
         color: color || "white",
-        fontSize: fontsize || "14px",
+        fontSize: fontSize || "14px",
       }}
     >
       {icon && <FontAwesomeIcon icon={icon} />}
