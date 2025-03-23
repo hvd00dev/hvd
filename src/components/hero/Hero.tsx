@@ -1,16 +1,34 @@
 "use client";
 
-import Image from "next/image";
+import styles from "./Hero.module.scss";
 import MaxWidth from "../maxwidth/maxwidth";
 import Button from "../button/Button";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Hero() {
   return (
+    <>
+    <Image
+    className="absolute top-[0px]"
+    src="/images/home.webp"
+    width={1920}
+    height={3000}
+    alt="Squares"
+    />
     <MaxWidth>
-      <div className="text-[#ededed] w-full pt-[26px]">
-        <div className="flex items-center justify-center gap-[20px] flex-col px-4 py-6 w-full bg-[#121212] rounded-[10px]">
+      <div className="flex flex-start relative h-[700px] text-[#ededed] w-full">
+        <div className={styles.avatar}></div>
+        <Image
+          className="absolute left-1/2 top-[280px] transform -translate-x-1/2 -translate-y-1/2"
+          src="/images/hvd2.png"
+          width={360}
+          height={100}
+          quality={100}
+          alt="Sketch of Hvd as a Illustration"
+        />
+        <div className="relative z-2 flex items-center justify-end gap-[20px] flex-col px-4 py-6 w-full">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-[40px] font-bold">Hi, I'm Hudson! 👋</h1>
             <span className="text-[26px] font-semibold">
@@ -45,5 +63,6 @@ export default function Hero() {
         </div>
       </div>
     </MaxWidth>
+    </>
   );
 }
