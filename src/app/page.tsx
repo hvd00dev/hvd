@@ -1,5 +1,6 @@
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
+import MyProjects from "@/components/myprojects/MyProjects";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="w-full flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Header />
         <Hero />
+        <MyProjects />
       </main>
       <footer></footer>
     </div>
