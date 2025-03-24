@@ -29,11 +29,23 @@
   95% {
     opacity: 0;
   }
+  96% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
 }
 
 .neonblink {
-  animation: neonBlink 3s infinite;
+  animation: neonBlink 5s infinite;
 }

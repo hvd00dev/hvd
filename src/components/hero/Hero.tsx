@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="flex flex-start relative h-[700px] text-[#ededed] w-full">
           <div className={styles.neonblink}>
             <Image
-              className="absolute top-[280px] left-1/2 -translate-x-1/2 -translate-y-1/2"
+              className="absolute top-[260px] left-1/2 -translate-x-1/2 -translate-y-1/2"
               src="/images/hvdlettering.png"
               width={858}
               height={50}
