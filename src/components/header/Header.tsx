@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <header
-      className={`md:justify-between fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1320px] flex items-center justify-center px-6 z-[5] ${
+      className={`md:justify-between md:fixed absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1320px] flex items-center justify-center px-6 z-[5] ${
         isScrolled
           ? "py-3 opacity-100 translate-y-0 transition-all duration-600"
           : "bg-transparent py-6"
