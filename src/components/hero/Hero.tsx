@@ -18,10 +18,10 @@ export default function Hero() {
         alt="Squares"
       />
       <MaxWidth>
-        <div className="flex flex-start relative h-[700px] text-[#ededed] w-full">
+        <div className="md:h-[700px] h-[660px] flex flex-start relative text-[#ededed] w-full">
           <div className={styles.neonblink}>
             <Image
-              className="absolute top-[260px] left-1/2 -translate-x-1/2 -translate-y-1/2"
+              className="md:w-[858px] w-[500px] absolute top-[260px] left-1/2 -translate-x-1/2 -translate-y-1/2"
               src="/images/hvdlettering.png"
               width={858}
               height={50}
@@ -30,7 +30,7 @@ export default function Hero() {
             />
           </div>
           <Image
-            className="absolute left-1/2 top-[280px] transform -translate-x-1/2 -translate-y-1/2"
+            className="md:w-[360px] md:top-[280px] w-[280px] absolute left-1/2 top-[240px] transform -translate-x-1/2 -translate-y-1/2"
             src="/images/hvd2.png"
             width={360}
             height={100}
@@ -39,20 +39,20 @@ export default function Hero() {
           />
           <div className="relative z-2 flex items-center justify-end gap-[20px] flex-col px-4 py-6 w-full">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="text-[40px] font-bold">Hi, I'm Hudson! 👋</h1>
-              <span className="text-[26px] font-semibold">
+              <h1 className="md:text-[40px] text-[30px] font-bold">Hi, I'm Hudson! 👋</h1>
+              <span className="md:text-[26px] text-[18px] font-semibold">
                 A Front-end Developer 👨‍💻
               </span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-x-4 gap-y-1 flex-wrap justify-center">
               <span className="whitespace-nowrap">
                 ⚡ +2 years of experience
               </span>
               <span className="whitespace-nowrap">
-                ・ 🏡 Rio de Janeiro, Brazil
+                🏡 Rio de Janeiro, Brazil
               </span>
               <span className="whitespace-nowrap">
-                ・ 🌎 Portuguese and English
+                🌎 Portuguese and English
               </span>
             </div>
             <div className="flex gap-2">
