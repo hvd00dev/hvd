@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1320px] flex items-center justify-between px-6 z-[5] ${
+      className={`md:justify-between fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1320px] flex items-center justify-center px-6 z-[5] ${
         isScrolled
           ? "py-3 opacity-100 translate-y-0 transition-all duration-600"
           : "bg-transparent py-6"
@@ -45,7 +45,7 @@ export default function Header() {
       />
       <nav>
         <ul
-          className={`flex items-center gap-12 transition-all duration-1 ${
+          className={`md:flex hidden items-center gap-12 transition-all duration-1 ${
             isScrolled
               ? "bg-black/30 backdrop-blur border-2 border-[#1c1c1c20] px-4 py-3 rounded-full opacity-100 translate-y-0"
               : "translate-y-[-5px]"
@@ -73,7 +73,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <div className="flex items-center gap-2">
+      <div className="xl:flex hidden items-center gap-2">
         <a
           className={contactClass}
           href="https://github.com/hvd00dev"
