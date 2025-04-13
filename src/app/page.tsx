@@ -1,3 +1,5 @@
+
+import About from "@/components/about/About";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
 import MyProjects from "@/components/myprojects/MyProjects";
@@ -10,6 +12,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Technologies/>
+        <About/>
         <MyProjects />
       </main>
       <footer></footer>
