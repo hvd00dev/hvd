@@ -48,45 +48,39 @@ export default function Technologies() {
     <MaxWidth>
       <div className={styles.tecmask}>
         <div className="w-full max-w-[1240px] flex items-center justify-center">
-          <div ref={containerRef} className="relative w-full overflow-hidden">
+          <div className="overflow-hidden">
             <div
               ref={scrollRef}
-              className="flex gap-6 whitespace-nowrap w-max animate-scroll"
-              style={{
-                animationDuration: `${speed}s`,
-              }}
+              className="flex gap-4 whitespace-nowrap animate-marquee"
+              style={{ animationDuration: `${speed}s` }}
             >
-              {[...technologies, ...technologies, ...technologies].map(
-                (tech, index) => (
-                  <Image
-                    key={index}
-                    src={tech.src}
-                    alt={tech.alt}
-                    quality={100}
-                    width={60}
-                    height={60}
-                    className="h-10 w-10 object-contain"
-                  />
-                )
-              )}
+              {[...technologies, ...technologies].map((tech, index) => (
+                <Image
+                  key={index}
+                  src={tech.src}
+                  alt={tech.alt}
+                  width={60}
+                  height={60}
+                  className="w-[clamp(30px,5vw,40px)] h-[clamp(30px,5vw,40px)] object-contain"
+                />
+              ))}
             </div>
           </div>
         </div>
       </div>
 
       <style jsx>{`
-        @keyframes scroll {
-          from {
-            transform: translateX(0);
+        @keyframes marquee {
+          0% {
+            transform: translateX(0%);
           }
-          to {
-            transform: translateX(-33.33%);
+          100% {
+            transform: translateX(-50%);
           }
         }
 
-        .animate-scroll {
-          display: flex;
-          animation: scroll linear infinite;
+        .animate-marquee {
+          animation: marquee linear infinite;
         }
       `}</style>
     </MaxWidth>
