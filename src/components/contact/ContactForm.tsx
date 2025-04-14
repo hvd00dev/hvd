@@ -77,7 +77,7 @@ export default function ContactForm() {
     >
       <h2 className="flex justify-center items-center gap-2 text-[22px] font-bold text-center text-white mb-4">
         <FontAwesomeIcon className="text-orange-500" icon={faPaperPlane} />
-        Let's connect!
+        Hit me up!
       </h2>
 
       <div className="flex flex-col gap-2">
