@@ -18,7 +18,7 @@ export default function Hero() {
         alt="Squares"
       />
       <MaxWidth>
-        <div className="md:h-[700px] h-[660px] flex flex-start relative text-[#ededed] w-full">
+        <div className="md:h-[700px] h-[660px] flex flex-start relative text-[#ededed] w-full mt-[100px]">
           <div className={styles.neonblink}>
             <Image
               className="md:w-[858px] w-[500px] absolute top-[260px] left-1/2 -translate-x-1/2 -translate-y-1/2"
