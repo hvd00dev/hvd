@@ -2,11 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MaxWidth from "../maxwidth/maxwidth";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Technologies from "../technologies/Technologies";
 
 export default function About() {
   return (
     <MaxWidth>
-      <section>
+      <section id="about">
+      <Technologies/>
         <div className="md:flex-row flex flex-col gap-4 justify-center items-center relative w-full md:h-[400px] h-[500px] ">
           <Image
             src="/images/about-background.webp"

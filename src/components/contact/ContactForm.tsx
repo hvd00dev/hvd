@@ -71,7 +71,7 @@ export default function ContactForm() {
   }, [success]);
 
   return (
-    <form
+    <form id="contact"
       onSubmit={handleSubmit}
       className="relative w-full p-6 rounded-2xl shadow-lg space-y-4"
     >
@@ -92,7 +92,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="Your name or what you want to be called"
-          className="text-[#c2c2c2] p-3 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="text-[#c2c2c2] p-2 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
         />
       </div>
 
@@ -108,7 +108,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="Your E-mail or WhatsApp"
-          className="text-[#c2c2c2] p-3 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="text-[#c2c2c2] p-2 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
         />
       </div>
 
@@ -124,7 +124,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="This message is about..."
-          className="text-[#c2c2c2] p-3 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="text-[#c2c2c2] p-2 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
         />
       </div>
 
@@ -140,7 +140,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="What do you need?"
-          className="text-[#c2c2c2] p-3 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+          className="text-[#c2c2c2] p-2 border border-[#0000003f] rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
         />
       </div>
 

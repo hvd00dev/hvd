@@ -1,4 +1,4 @@
-
+import './globals.css';
 import About from "@/components/about/About";
 import ContactForm from "@/components/contact/ContactForm";
 import Header from "@/components/header/Header";
@@ -12,7 +12,6 @@ export default function Home() {
       <main className="w-full flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Header />
         <Hero />
-        <Technologies/>
         <About/>
         <MyProjects />
         <ContactForm/>

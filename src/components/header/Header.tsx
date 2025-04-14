@@ -8,7 +8,6 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import MaxWidth from "../maxwidth/maxwidth";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,22 +51,22 @@ export default function Header() {
           }`}
         >
           <li>
-            <a className={anchorClass} href="#">
+            <a className={anchorClass} href="#home">
               Home
             </a>
           </li>
           <li>
-            <a className={anchorClass} href="#">
+            <a className={anchorClass} href="#about">
               About
             </a>
           </li>
           <li>
-            <a className={anchorClass} href="#">
+            <a className={anchorClass} href="#projects">
               Projects
             </a>
           </li>
           <li>
-            <a className={anchorClass} href="#">
+            <a className={anchorClass} href="#contact">
               Contact
             </a>
           </li>

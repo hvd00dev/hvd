@@ -16,8 +16,9 @@ export default function Hero() {
         width={1920}
         height={3000}
         alt="Squares"
-      />
+        />
       <MaxWidth>
+        <section id="home">
         <div className="md:h-[700px] h-[660px] flex flex-start relative text-[#ededed] w-full mt-[100px]">
           <div className={styles.neonblink}>
             <Image
@@ -73,6 +74,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      </section>
       </MaxWidth>
     </>
   );
