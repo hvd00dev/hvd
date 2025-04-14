@@ -7,7 +7,7 @@ import Technologies from "../technologies/Technologies";
 export default function About() {
   return (
     <MaxWidth>
-      <section id="about">
+      <section id="about" className="flex flex-col gap-4">
       <Technologies/>
         <div className="md:flex-row flex flex-col gap-4 justify-center items-center relative w-full md:h-[400px] h-[500px] ">
           <Image

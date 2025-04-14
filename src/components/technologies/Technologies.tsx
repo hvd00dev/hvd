@@ -8,7 +8,7 @@ import styles from "./Technologies.module.scss";
 const technologies = [
   { src: "/images/react.webp", alt: "React" },
   { src: "/images/html.webp", alt: "HTML" },
-  { src: "/images/CSS.webp", alt: "CSS" },
+  { src: "/images/CSS.png", alt: "CSS" },
   { src: "/images/sass.webp", alt: "SCSS" },
   { src: "/images/typescript.png", alt: "TypeScript" },
   { src: "/images/javascript.webp", alt: "JavaScript" },
