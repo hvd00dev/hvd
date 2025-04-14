@@ -11,10 +11,10 @@ export default function Hero() {
   return (
     <>
       <Image
-        className="absolute top-[0px]"
+        className="absolute top-[0px] min-h-[120px]"
         src="/images/home.webp"
         width={1920}
-        height={3000}
+        height={240}
         alt="Squares"
         />
       <MaxWidth>
