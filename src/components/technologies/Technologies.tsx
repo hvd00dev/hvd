@@ -61,6 +61,7 @@ export default function Technologies() {
                   alt={tech.alt}
                   width={60}
                   height={60}
+                  quality={100}
                   className="w-[clamp(30px,5vw,40px)] h-[clamp(30px,5vw,40px)] object-contain"
                 />
               ))}
