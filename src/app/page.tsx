@@ -3,8 +3,7 @@ import About from "@/components/about/About";
 import ContactForm from "@/components/contact/ContactForm";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
-import MyProjects from "@/components/myprojects/MyProjects";
-import Technologies from "@/components/technologies/Technologies";
+// import MyProjects from "@/components/myprojects/MyProjects";
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
         <Header />
         <Hero />
         <About/>
-        <MyProjects />
+        {/* <MyProjects /> */}
         <ContactForm/>
       </main>
       <footer></footer>

@@ -60,11 +60,11 @@ export default function Header() {
               About
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className={anchorClass} href="#projects">
               Projects
             </a>
-          </li>
+          </li> */}
           <li>
             <a className={anchorClass} href="#contact">
               Contact
