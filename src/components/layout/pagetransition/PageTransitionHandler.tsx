@@ -16,7 +16,7 @@ export default function PageTransitionHandler({
     setLoading(true);
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 600);
+    }, 800);
 
     return () => clearTimeout(timeout);
   }, [pathname]);
