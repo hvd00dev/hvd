@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import MaxWidth from "../maxwidth/maxwidth";
+import MaxWidth from "../../../layout/maxwidth/maxwidth";
 import Image from "next/image";
 import styles from "./Technologies.module.scss";
 

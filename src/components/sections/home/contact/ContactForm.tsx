@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
-import Button from "../button/Button";
+import Button from "../../../ui/button/Button";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

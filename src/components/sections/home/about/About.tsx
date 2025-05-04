@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MaxWidth from "../maxwidth/maxwidth";
+import MaxWidth from "../../../layout/maxwidth/maxwidth";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Technologies from "../technologies/Technologies";

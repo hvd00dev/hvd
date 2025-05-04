@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MaxWidth from "../maxwidth/maxwidth";
+import MaxWidth from "../../../layout/maxwidth/maxwidth";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 export default function MyProjects() {

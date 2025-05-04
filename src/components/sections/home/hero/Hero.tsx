@@ -1,8 +1,8 @@
 "use client";
 
 import styles from "./Hero.module.scss";
-import MaxWidth from "../maxwidth/maxwidth";
-import Button from "../button/Button";
+import MaxWidth from "../../../layout/maxwidth/maxwidth";
+import Button from "../../../ui/button/Button";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
