@@ -88,7 +88,7 @@ const TitleClass = "text-white font-bold"
           Hit me up!
         </h2>
 
-        <div className="w-full bg-[#202020] p-4 rounded-xl flex flex-col gap-2">
+        <div className="w-full bg-[#1C1C1C] p-4 rounded-xl flex flex-col gap-2">
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className={TitleClass}>
               Your name
