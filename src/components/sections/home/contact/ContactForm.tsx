@@ -81,7 +81,7 @@ const TitleClass = "text-white font-bold"
       <form
         id="contact"
         onSubmit={handleSubmit}
-        className="flex flex-col items-center gap-2 relative w-full p-6 rounded-2xl shadow-lg space-y-4"
+        className="flex flex-col items-center gap-2 relative w-full mb-15 rounded-2xl shadow-lg space-y-4"
       >
         <h2 className="flex justify-center items-center gap-2 text-[22px] font-bold text-center text-white mb-4">
           <FontAwesomeIcon className="text-orange-500" icon={faPaperPlane} />
@@ -153,8 +153,8 @@ const TitleClass = "text-white font-bold"
             />
           </div>
 
-          <div className="w-full flex justify-end items-center">
-            <Button text="Send now" />
+          <div className="w-full flex justify-end lg:justify-center items-center">
+            <Button text="Send now"/>
           </div>
 
           <p

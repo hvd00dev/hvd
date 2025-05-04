@@ -22,14 +22,13 @@ export default function Home() {
   }, [searchParams]);
 
   return (
-    <div className=" min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <main className="w-full flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Hero />
         <About />
         <MyProjects />
         <ContactForm />
       </main>
-      <footer></footer>
     </div>
   );
 }

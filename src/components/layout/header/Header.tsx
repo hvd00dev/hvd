@@ -36,19 +36,21 @@ export default function Header() {
 
   return (
     <header
-      className={`md:justify-between md:fixed absolute top-0 w-full max-w-[1320px] flex items-center justify-center px-6 z-[5] ${
+      className={`left-1/2 -translate-x-1/2 md:justify-between md:fixed absolute top-0 w-full max-w-[1320px] flex items-center justify-center px-6 z-[5] ${
         isScrolled
           ? "py-3 opacity-100 translate-y-0 transition-all duration-600"
           : "bg-transparent py-6"
       }`}
     >
-      <Image
-        className="cursor-pointer hover:scale-102"
-        src="/logo.png"
-        alt="HVD logo"
-        width={60}
-        height={20}
-      />
+      <a href={getLink("home")}>
+        <Image
+          className="cursor-pointer hover:scale-102"
+          src="/logo.png"
+          alt="HVD logo"
+          width={60}
+          height={20}
+        />
+      </a>
       <nav>
         <ul
           className={`md:flex hidden items-center gap-12 transition-all duration-1 ${
@@ -57,7 +59,7 @@ export default function Header() {
               : "translate-y-[-5px]"
           }`}
         >
-         <li>
+          <li>
             <a className={anchorClass} href={getLink("home")}>
               Home
             </a>

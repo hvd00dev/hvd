@@ -12,6 +12,7 @@ export default function ComingSoon() {
       <FontAwesomeIcon
         icon={faScrewdriverWrench}
         className="text-orange-500 text-[40px] md:text-[50px]"
+        width={80}
       />
 
       <h1 className="text-4xl md:text-5xl font-bold text-orange-500 mb-4">
@@ -24,7 +25,7 @@ export default function ComingSoon() {
       </p>
 
       <div className="mt-8 text-sm text-gray-500">
-        <FontAwesomeIcon icon={faEnvelope} /> hvd00dev@gmail.com
+        <FontAwesomeIcon icon={faEnvelope} width={12} /> hvd00dev@gmail.com
       </div>
 
       <g
