@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,6 +12,8 @@ import {
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +23,10 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const getLink = (id: string) => {
+    return isHome ? `#${id}` : `/?scrollTo=${id}`;
+  };
 
   const anchorClass =
     "text-[#ededed] text-xs sm:text-sm font-semibold sm:font-bold hover:text-white transition-all duration-200 cursor-pointer";
@@ -50,23 +57,23 @@ export default function Header() {
               : "translate-y-[-5px]"
           }`}
         >
-          <li>
-            <a className={anchorClass} href="#home">
+         <li>
+            <a className={anchorClass} href={getLink("home")}>
               Home
             </a>
           </li>
           <li>
-            <a className={anchorClass} href="#about">
+            <a className={anchorClass} href={getLink("about")}>
               About
             </a>
           </li>
-          {/* <li>
-            <a className={anchorClass} href="#projects">
+          <li>
+            <a className={anchorClass} href={getLink("projects")}>
               Projects
             </a>
-          </li> */}
+          </li>
           <li>
-            <a className={anchorClass} href="#contact">
+            <a className={anchorClass} href={getLink("contact")}>
               Contact
             </a>
           </li>
