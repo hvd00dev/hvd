@@ -45,15 +45,15 @@ const TitleClass = "text-white font-bold"
 
     try {
       await emailjs.send(
-        "service_6z57avf",
-        "template_2xw7qjb",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
           from_name: form.name,
           contact: form.contact,
           subject: form.subject,
           message: form.message,
         },
-        "FyAie-0cF4AkGpGGl"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
       setSuccess(true);
       setShowSuccess(true);
