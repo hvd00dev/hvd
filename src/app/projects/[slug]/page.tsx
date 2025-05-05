@@ -6,8 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = await getProjectBySlug(slug);
 
   if (!project) return notFound();
 
@@ -48,7 +49,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
                 />
               </div>
-              <Link href={"https://hvdbank.vercel.app"} target="_blank">
+              <Link href={project.link ?? "#"} target="_blank">
                 <button className="hover:border-[#ff6600] cursor-pointer font-bold flex gap-2 items-center bg-black/20 backdrop-blur border-2 border-[#1c1c1c20] text-white px-3 py-1 rounded-full text-sm ">
                   <FontAwesomeIcon icon={faGlobe} className="text-[#ff6600]" />
                   <span>CLICK TO VISIT</span>
@@ -69,3 +70,5 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     </div>
   );
 }
+
+
