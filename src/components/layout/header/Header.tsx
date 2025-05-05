@@ -55,7 +55,7 @@ export default function Header() {
         <ul
           className={`md:flex hidden items-center gap-12 transition-all duration-1 ${
             isScrolled
-              ? "bg-black/30 backdrop-blur border-2 border-[#1c1c1c20] px-4 py-3 rounded-full opacity-100 translate-y-0"
+              ? "bg-black/30 backdrop-blur border-3 border-[#1c1c1c20] px-4 py-3 rounded-full opacity-100 translate-y-0"
               : "translate-y-[-5px]"
           }`}
         >

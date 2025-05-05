@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MaxWidth from "../../../layout/maxwidth/maxwidth";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import Button from "@/components/ui/button/Button";
+import Link from "next/link";
+import ProjectCard from "../../projects/projectcard/ProjectCard";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import ProjectCards from "../../projects/projectcards/ProjectCards";
 
 export default function MyProjects() {
   return (
@@ -14,11 +18,11 @@ export default function MyProjects() {
             </span>
             <h3 className="font-bold">Latest projects</h3>
           </div>
-
-          <span className="text-[#474747]">under development</span>
+          <ProjectCards/>
           <div className="w-full flex justify-center items-center">
-
-          <Button text="See all projects" href="projects"></Button>
+            <Link href="/projects">
+              <Button text="See all projects"></Button>
+            </Link>
           </div>
         </div>
       </section>

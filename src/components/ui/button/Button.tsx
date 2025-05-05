@@ -15,9 +15,20 @@ type ButtonProps = {
   target?: string;
 };
 
-const Button: React.FC<ButtonProps> = ({ text, icon, onClick, border, background, color, href, target, fontSize }) => {
-  const baseStyles = "cursor-pointer flex text-[14px] min-h-[42px] max-h-[42px] min-w-[42px] items-center justify-center rounded-lg gap-2 p-2 hover:scale-[1.02] hover:transition-all hover:duration-200 border hover:border-2";
-  
+const Button: React.FC<ButtonProps> = ({
+  text,
+  icon,
+  onClick,
+  border,
+  background,
+  color,
+  href,
+  target,
+  fontSize,
+}) => {
+  const baseStyles =
+    "cursor-pointer flex text-[14px] min-h-[42px] max-h-[42px] min-w-[42px] items-center justify-center rounded-lg gap-2 p-2 hover:scale-[1.02] hover:transition-all hover:duration-200 border hover:border-2";
+
   const content = (
     <button
       className={baseStyles}
@@ -34,7 +45,13 @@ const Button: React.FC<ButtonProps> = ({ text, icon, onClick, border, background
     </button>
   );
 
-  return href ? <a href={href} target={target} rel="noopener noreferrer">{content}</a> : content;
+  return href ? (
+    <a href={href} target={target} rel="noopener noreferrer">
+      {content}
+    </a>
+  ) : (
+    content
+  );
 };
 
 export default Button;

@@ -23,7 +23,7 @@ export default function Footer() {
       <MaxWidth>
         <div className="flex flex-col gap-4 items-center w-full pb-5 border-b-1 border-[#262626] mb-4">
           <h2 className="flex gap-2 items-center text-white text-[20px] font-bold">
-            <Image src="/logo.png" width={40} height={22} alt="hvdbank Logo" />
+            <Image src="/logo.png" width={40} height={22} alt="Hvd Logo" />
           </h2>
         </div>
         <div className="w-full flex flex-row items-center justify-center flex-wrap gap-4 pb-4 border-b-1 border-[#262626]">
