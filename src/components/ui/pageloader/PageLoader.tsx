@@ -12,7 +12,7 @@ export default function PageLoader() {
         height={240}
         alt="Squares"
       />
-      <Image src="/logo.png" alt="Logo" width={100} height={100} />
+      <Image src="/logo.png" alt="Logo" width={100} height={50} />
       <Image
         className="absolute bottom-[0px] min-h-[120px] rotate-180"
         src="/images/home.webp"

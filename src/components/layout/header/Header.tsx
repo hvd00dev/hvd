@@ -48,7 +48,7 @@ export default function Header() {
           src="/logo.png"
           alt="HVD logo"
           width={60}
-          height={20}
+          height={30}
         />
       </a>
       <nav>

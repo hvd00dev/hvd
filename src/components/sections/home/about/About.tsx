@@ -27,12 +27,12 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col gap-4 items-center md:items-start">
-            <h3 className="text-[22px] font-bold flex items-center gap-2">
+            <h2 className="text-[22px] font-bold flex items-center gap-2">
               <b className="text-orange-500 ">
                 <FontAwesomeIcon icon={faCertificate} />
               </b>{" "}
               About me
-            </h3>
+            </h2>
             <p className="md:text-left text-center text-xl max-w-[500px]">
               <b>Front-end developer</b>, based in Rio de Janeiro, Brazil. With
               over 2 years of experience, contributing to <b>agile teams</b> and

@@ -16,6 +16,7 @@ export default function Hero() {
         width={1920}
         height={240}
         alt="Squares"
+        priority
         />
       <MaxWidth>
         <section id="home">
@@ -25,25 +26,27 @@ export default function Hero() {
               className="md:w-[858px] w-[500px] absolute top-[260px] left-1/2 -translate-x-1/2 -translate-y-1/2"
               src="/images/hvdlettering.png"
               width={858}
-              height={50}
+              height={566}
               quality={100}
               alt="Hvd lettering"
+              priority
             />
           </div>
           <Image
             className="md:w-[360px] md:top-[280px] w-[280px] absolute left-1/2 top-[240px] transform -translate-x-1/2 -translate-y-1/2"
             src="/images/hvd2.png"
-            width={360}
-            height={100}
+            width={900}
+            height={1438}
             quality={100}
             alt="Sketch of Hvd as a Illustration"
+            priority
           />
           <div className="relative z-2 flex items-center justify-end gap-[20px] flex-col px-4 py-6 w-full">
             <div className="flex flex-col items-center justify-center">
               <h1 className="md:text-[40px] text-[30px] font-bold">Hi, I'm Hudson! 👋</h1>
-              <span className="md:text-[26px] text-[18px] font-semibold">
+              <h2 className="md:text-[26px] text-[18px] font-semibold">
                 A Front-end Developer 👨‍💻
-              </span>
+              </h2>
             </div>
             <div className="flex items-center gap-x-4 gap-y-1 flex-wrap justify-center">
               <span className="whitespace-nowrap">
